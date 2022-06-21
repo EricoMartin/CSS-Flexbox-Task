@@ -1,115 +1,241 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: #0c0c0c;
+.flexbox {
+    width: 880px;
+    height: 460px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    place-items: center;
-    min-height: 100vh;
-    width: 100vw;
-    margin: auto;
-    
+    flex-direction: row;
+    margin: 15%;
+    border-radius: 5px;
 }
 
-
-.grid-container {
-    display: grid;
-    grid-template-areas:
-        'B B B A A'
-        'C C D D D '
-        'C C E E E';
-    background-color: #0c0c0c;
-    gap: 0.5rem;
-    height: 25rem;
+img {
+    margin: 35px; 
 }
 
-/* .grid-container div:nth-of-type(1) {
-
-    width: 20rem;
-    height: 6rem;
+h3 {
+    font-family: Big Shoulders Display;
+    margin: 0 35px;
+    font-size: 200%;
+    color: hsl(0, 0%, 95%);
 }
 
-.grid-container div:nth-of-type(2) {
-
-    width: 33rem;
-    height: 6rem;
+p {
+    font-family: Lexend Deca;
+    font-size: 15px;
+    margin: 35px;
+    line-height: 1.5;
 }
 
-.grid-container div:nth-of-type(3) {
-    width: 24rem;
-
+.orange {
+    background-color: hsl(31, 77%, 52%);
+    width: 33.3%;
+    font-family: Lexend Deca, Big Shoulders Display;
+    color: hsla(0, 0%, 100%, 0.75);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
-.grid-container div:nth-of-type(4) {
-    width: auto;
+.btn1 {
+    color: hsl(31, 77%, 52%);
+    width: 50%;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid white;
+    border-radius: 24px;
+    padding: 8px;
+    margin: 30px;
+    font-family: Lexend Deca;
+    font-size: 15px;
+    cursor: pointer;
 }
 
-.grid-container div:nth-of-type(5) {
-    width: auto;
-} */
-
-
-.item0 {
-    grid-area: A;
-    width: 20rem;
-        height: "100%";
-    background-color: #FFA401;
+.btn1:hover {
+    color:  hsla(0, 0%, 100%, 0.75);
+    background-color: transparent;    
 }
 
-.item1 {
-    width: 33rem;
-    height: 10rem;
-    grid-area: B;
-    background-color: #EB5020;
+.cyan {
+    background-color: hsl(184, 100%, 22%);
+    width: 33.3%;
+    font-family: Lexend Deca, Big Shoulders Display;
+    color: hsla(0, 0%, 100%, 0.75);
+    justify-items: center;
 }
 
-.item2 {
-    height:10rem;
-    width: 24rem;
-    grid-area: C;
-    background-color: #05AA42;
+.btn2 {
+    color: hsl(184, 100%, 22%);
+    width: 50%;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid white;
+    border-radius: 24px;
+    padding: 8px;
+    margin: 30px;
+    font-family: Lexend Deca;
+    font-size: 15px;
+    cursor: pointer;
 }
 
-.item3 {
-    grid-area: D;
-    background-color: #01AEFD;
+.btn2:hover {
+    color:  hsla(0, 0%, 100%, 0.75);
+    background-color: transparent;    
 }
 
-.item4 {
-    grid-area: E;
-    background-color: #01AEFD;
-
+.dark {
+    background-color: hsl(179, 100%, 13%);
+    width: 33.3%;
+    font-family: Lexend Deca, Big Shoulders Display;
+    color: hsla(0, 0%, 100%, 0.75);
+    justify-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-.grid-container div{
-    padding: 2em;
-    text-align: center;
-} 
+.btn3 {
+    color: hsl(179, 100%, 13%);
+    width: 50%;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid white;
+    border-radius: 24px;
+    padding: 8px;
+    margin: 30px;
+    font-family: Lexend Deca;
+    font-size: 15px;
+    cursor: pointer;
+}
 
+.btn3:hover {
+    color:  hsla(0, 0%, 100%, 0.75);
+    background-color: transparent;    
+}
 
-/* @media  (max-width:600px) {
-    .grid-container{
+@media screen and (max-width: 375px) {
+    .flexbox {
+        width: 80%;
+        height: 460px;
         display: flex;
         flex-direction: column;
-    }
-    
- 
-} */
-
-
-@media (max-width:500px) {
-    .grid-container {
-        display: flex;
-        width: 100vw;
-        flex-direction: column;
+        margin: 15%;
     }
 
-    .item0,
-    .item2,.item1,.item3,.item4 {
+    .orange {
+        background-color: hsl(31, 77%, 52%);
         width: 100%;
+        font-family: Lexend Deca, Big Shoulders Display;
+        color: hsla(0, 0%, 100%, 0.75);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
+    
+    .btn1 {
+        color: hsl(31, 77%, 52%);
+        width: 50%;
+        background-color: hsl(0, 0%, 95%);
+        border: 2px solid white;
+        border-radius: 24px;
+        padding: 8px;
+        margin: 30px;
+        font-family: Lexend Deca;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+    .btn1:hover {
+        color:  hsla(0, 0%, 100%, 0.75);
+        background-color: transparent;    
+    }
+    
+    .cyan {
+        background-color: hsl(184, 100%, 22%);
+        width: 100%;
+        font-family: Lexend Deca, Big Shoulders Display;
+        color: hsla(0, 0%, 100%, 0.75);
+       }
+    
+    .btn2 {
+        color: hsl(184, 100%, 22%);
+        width: 50%;
+        background-color: hsl(0, 0%, 95%);
+        border: 2px solid white;
+        border-radius: 24px;
+        padding: 8px;
+        margin: 30px;
+        font-family: Lexend Deca;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+    .btn2:hover {
+        color:  hsla(0, 0%, 100%, 0.75);
+        background-color: transparent;    
+    }
+    
+    .dark {
+        background-color: hsl(179, 100%, 13%);
+        width: 100%;
+        font-family: Lexend Deca, Big Shoulders Display;
+        color: hsla(0, 0%, 100%, 0.75);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    
+    .btn3 {
+        color: hsl(179, 100%, 13%);
+        width: 50%;
+        background-color: hsl(0, 0%, 95%);
+        border: 2px solid white;
+        border-radius: 24px;
+        padding: 8px;
+        margin: 30px;
+        font-family: Lexend Deca;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+    .btn3:hover {
+        color:  hsla(0, 0%, 100%, 0.75);
+        background-color: transparent;    
+    }
+  }
+
+  /* grid */
+  .grid-container {
+    display: grid;
+    gap: 10px;
+    background-color: #0a1c2b;
+    padding: 10px;
+    margin: 5%;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    width: 900px;
+    height: 600px;
+  }
+
+  .red {
+      background-color: red;
+      grid-column: 1/10;
+      grid-row: 1/9;
+    
+  }
+
+  .yellow {
+      background-color: orange;
+      grid-column: 10/15;
+      grid-row: 1/9
+  }
+
+  .green {
+      background-color: green;
+      grid-column: 1/7;
+      grid-row: 9/18;
+  }
+
+  .small-blue {
+      background-color: blue;
+      grid-column: 7/15;
+      grid-row: 9/13;
+  }
+ 
+  .big-blue {
+    background-color: blue;
+    grid-column: 7/15;
+    grid-row: 13/18;
+    
 }
